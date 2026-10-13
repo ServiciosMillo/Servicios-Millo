@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Millo - Soporte en Tecnologías de la Información</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <img id="brand-logo" src="Logo millo nuevo.png" alt="Logo nuevo de Servicios Millo" class="h-28 w-28 object-contain rounded-none bg-transparent shadow-none ring-0" />
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-blue-900 block leading-tight">Servicios Millo</span>
+                        <span class="text-xs font-medium text-blue-600 uppercase tracking-widest">Soporte en Tecnologías de la Información</span>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Inicio</a>
+                    <a href="#nosotros" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Nosotros</a>
+                    <a href="#servicios" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Servicios</a>
+                    <a href="#galeria" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Galería</a>
+                    <a href="#contacto" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold text-sm shadow-lg shadow-blue-600/30 hover:bg-blue-700 transition-all transform hover:-translate-y-0.5">Contacto</a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="p-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#inicio" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-600">Inicio</a>
+            <a href="#nosotros" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-600">Nosotros</a>
+            <a href="#servicios" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-600">Servicios</a>
+            <a href="#galeria" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-600">Galería</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-lg text-base font-medium bg-blue-600 text-white text-center shadow-md">Contacto</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-32 hero-gradient text-white relative overflow-hidden">
+        <!-- Abstract background pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/30 border border-blue-400/30 text-blue-200 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-shield-halved text-blue-300"></i> Soporte Presencial y Remoto
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Servicios Millo <br/><span class="text-blue-300">Soluciones en Informática</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-blue-100 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Maximizamos el rendimiento de tu infraestructura tecnológica. Ofrecemos mantenimiento preventivo, soporte técnico especializado y redes seguras para tu hogar o empresa.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contacto" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-blue-900 font-bold shadow-xl hover:bg-blue-50 transition-all transform hover:-translate-y-1 text-center">
+                            Solicitar Asesoría
+                        </a>
+                        <a href="#servicios" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-700/50 border border-blue-400/30 text-white font-semibold hover:bg-blue-700 transition-all text-center">
+                            Nuestros Servicios
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center">
+                    <div class="w-full max-w-md bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 shadow-2xl relative">
+                        <div class="absolute -top-4 -right-4 bg-blue-500 text-white p-4 rounded-2xl shadow-lg">
+                            <i class="fa-solid fa-server text-2xl"></i>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/30 flex items-center justify-center text-blue-200">
+                                    <i class="fa-solid fa-laptop-code text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Soporte Integral</h4>
+                                    <p class="text-xs text-blue-200">Hardware y Software</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/30 flex items-center justify-center text-blue-200">
+                                    <i class="fa-solid fa-wifi text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Redes y Conectividad</h4>
+                                    <p class="text-xs text-blue-200">Instalación y seguridad de redes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/30 flex items-center justify-center text-blue-200">
+                                    <i class="fa-solid fa-clock-rotate-left text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Respuesta Rápida</h4>
+                                    <p class="text-xs text-blue-200">Atención  garantizada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-3.5 py-1.5 rounded-full">Sobre Nosotros</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-900 mt-4 tracking-tight">Expertos comprometidos con tu éxito digital</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">En Servicios Millo transformamos los desafíos tecnológicos de tu negocio en soluciones eficientes, seguras y escalables.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 hover:shadow-xl hover:border-blue-100 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-blue-600/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mt-6 mb-3">Misión</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Proveer soluciones informáticas de alta calidad que garanticen la continuidad operativa de nuestros clientes mediante un soporte técnico oportuno y profesional.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 hover:shadow-xl hover:border-blue-100 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-700 text-white flex items-center justify-center text-2xl shadow-lg shadow-blue-700/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mt-6 mb-3">Visión</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Ser la empresa líder en soluciones tecnológicas y soporte informático reconocida por su excelencia, confianza y constante innovación en el servicio.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 hover:shadow-xl hover:border-blue-100 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-800 text-white flex items-center justify-center text-2xl shadow-lg shadow-blue-800/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mt-6 mb-3">Valores</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Compromiso absoluto, honestidad en cada diagnóstico, puntualidad en las entregas y pasión por resolver cualquier incidencia tecnológica.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-100 px-3.5 py-1.5 rounded-full">Nuestros Servicios</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-900 mt-4 tracking-tight">Soluciones a tu medida</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">Cubrimos todas las áreas tecnológicas que tu hogar o negocio necesitan para funcionar sin interrupciones.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-6 font-bold">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Mantenimiento a equipos de cómputo</h3>
+                    <p class="text-slate-600 text-sm">Limpieza en hardware, optimización de sistema operativo y mejora de rendimiento.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-6 font-bold">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Redes y Cableado</h3>
+                    <p class="text-slate-600 text-sm">Diseño e instalación de redes LAN/Wi-Fi, configuración de routers, switches y seguridad perimetral.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-6 font-bold">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Eliminación de Malware</h3>
+                    <p class="text-slate-600 text-sm">Limpieza profunda de virus, spyware, troyanos y recuperación de datos importantes con respaldo seguro.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-6 font-bold">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Soporte Técnico Remoto</h3>
+                    <p class="text-slate-600 text-sm">Solución de incidencias de software en tiempo récord mediante asistencia remota segura y confiable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-3.5 py-1.5 rounded-full">Galería de Trabajos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-900 mt-4 tracking-tight">Nuestra Experiencia</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">Descubre cómo hemos ayudado a nuestros clientes como Alsea, Grupo Innovador, Cemex y Lenovo a resolver sus desafíos tecnológicos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-md bg-slate-100 aspect-video flex items-center justify-center border border-slate-200">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Mantenimiento+de+Equipos" alt="Mantenimiento de equipos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-semibold text-sm">Mantenimiento de Hardware y Equipos de Escritorio</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-md bg-slate-100 aspect-video flex items-center justify-center border border-slate-200">
+                    <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Instalacion+de+Redes" alt="Instalación de redes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-semibold text-sm">Configuración y Cableado Estructurado de Redes</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-md bg-slate-100 aspect-video flex items-center justify-center border border-slate-200">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Soporte+Tecnico+Empresarial" alt="Soporte empresarial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-semibold text-sm">Soporte Integral para Oficinas y Negocios</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-md bg-slate-100 aspect-video flex items-center justify-center border border-slate-200">
+                    <img src="https://placehold.co/600x400/1e40af/ffffff?text=Ensamble+PC+Gamer" alt="Ensamble de PC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-semibold text-sm">Ensamblaje y Optimización de Equipos de Alto Rendimiento</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-md bg-slate-100 aspect-video flex items-center justify-center border border-slate-200">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Seguridad+Informatica" alt="Seguridad informática" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-semibold text-sm">Auditorías de Seguridad y Respaldo de Información</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-md bg-slate-100 aspect-video flex items-center justify-center border border-slate-200">
+                    <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Instalación+CCTV" alt="Instalación de CCTV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-semibold text-sm">Instalación y Mantenimiento de Sistemas de CCTV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-100 px-3.5 py-1.5 rounded-full">Contacto y Ubicación</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-900 mt-4 tracking-tight">Estamos listos para atenderte</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">Comunícate con nosotros por cualquiera de nuestros canales o visítanos directamente en nuestra oficina.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info & Form -->
+                <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-slate-200 space-y-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900 text-sm">Teléfono / WhatsApp</h4>
+                                <p class="text-slate-600 text-sm mt-1">+52 722 709 0208</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900 text-sm">Correo Electrónico</h4>
+                                <p class="text-slate-600 text-sm mt-1">ivain_tavira@hotmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900 text-sm">Horario de Atención</h4>
+                                <div class="grid grid-cols-[4.5rem_1fr] gap-x-2 text-slate-600 text-sm mt-1">
+                                    <span>Lun - Vie:</span>
+                                    <span>9:00 AM - 6:00 PM</span>
+                                    <span>Sáb:</span>
+                                    <span>10:00 AM - 3:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900 text-sm">Dirección</h4>
+                                <p class="text-slate-600 text-sm mt-1">Jose Vicente Villada 916, Toluca de Lerdo, Estado de México, C.P. 50160, México</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-slate-100">
+
+                    <!-- Contact Form -->
+                    <form id="contact-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <h3 class="text-lg font-bold text-blue-900">Envíanos un mensaje rápido</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Nombre Completo</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-blue-600 text-sm" placeholder="Juan Pérez">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Teléfono o Correo</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-blue-600 text-sm" placeholder="tucorreo@ejemplo.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Mensaje o Requerimiento</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-blue-600 text-sm" placeholder="Describe brevemente el problema técnico o servicio que necesitas..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-blue-600 text-white font-bold shadow-lg shadow-blue-600/30 hover:bg-blue-700 transition-all text-sm">
+                            Enviar Solicitud
+                        </button>
+                        <div id="form-success" class="hidden p-4 rounded-xl bg-green-50 border border-green-200 text-green-700 text-sm font-medium text-center">
+                            ¡Mensaje enviado con éxito! Nos pondremos en contacto contigo a la brevedad.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Simulated Interactive Map -->
+                <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-200 flex flex-col h-full min-h-[400px]">
+                    <div class="flex-1 w-full rounded-2xl overflow-hidden relative bg-blue-900 flex items-center justify-center border border-slate-200">
+                        <!-- Simulated Map Visual Background -->
+                        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#93c5fd_1px,transparent_1px)] [background-size:24px_24px]"></div>
+                        <div class="absolute inset-0 flex items-center justify-center p-6 text-center">
+                            <div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl max-w-sm border border-white">
+                                <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-3 shadow-md">
+                                    <i class="fa-solid fa-location-dot text-xl"></i>
+                                </div>
+                                <h4 class="font-bold text-blue-900">Servicios Millo</h4>
+                                <p class="text-slate-600 text-xs mt-1">Jose Vicente Villada 916, Toluca de Lerdo, Estado de México, C.P. 50168, México</p>
+                                <a href="https://maps.google.com" target="_blank" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white text-xs font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                                    Abrir en Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-950 text-white py-12 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-3">
+                    <img id="footer-logo" src="Logo millo nuevo.png" alt="Logo nuevo de Servicios Millo" class="h-28 w-28 object-contain rounded-none bg-transparent shadow-none ring-0" />
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white block leading-tight">Servicios Millo</span>
+                        <span class="text-xs font-medium text-blue-400 uppercase tracking-widest">Soporte en Tecnologías de la Información</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-6 text-slate-400 text-sm">
+                    <a href="#inicio" class="hover:text-white transition-colors">Inicio</a>
+                    <a href="#nosotros" class="hover:text-white transition-colors">Nosotros</a>
+                    <a href="#servicios" class="hover:text-white transition-colors">Servicios</a>
+                    <a href="#galeria" class="hover:text-white transition-colors">Galería</a>
+                    <a href="#contacto" class="hover:text-white transition-colors">Contacto</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-xl bg-blue-900/50 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-blue-900/50 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-blue-900/50 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-blue-900/60 text-center text-xs text-blue-400">
+                &copy; 2026 Servicios Millo - Soporte en Tecnologías de la Información. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Remove white background from the logo file on load
+        const brandLogo = document.getElementById('brand-logo');
+        if (brandLogo) {
+            const originalLogo = brandLogo.src;
+            const tempImage = new Image();
+            tempImage.onload = () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = tempImage.naturalWidth;
+                canvas.height = tempImage.naturalHeight;
+                ctx.drawImage(tempImage, 0, 0);
+
+                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+
+                for (let i = 0; i < data.length; i += 4) {
+                    const r = data[i];
+                    const g = data[i + 1];
+                    const b = data[i + 2];
+
+                    if (r > 245 && g > 245 && b > 245) {
+                        data[i + 3] = 0;
+                    }
+                }
+
+                ctx.putImageData(imageData, 0, 0);
+                brandLogo.src = canvas.toDataURL('image/png');
+            };
+            tempImage.src = originalLogo;
+        }
+
+        // Handle contact form submission without alerts
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            const form = document.getElementById('contact-form');
+            
+            successMsg.classList.remove('hidden');
+            form.reset();
+            
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
